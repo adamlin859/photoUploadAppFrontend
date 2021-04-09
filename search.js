@@ -97,7 +97,7 @@ function get_images(event){
     for (urls of links) {
       if (i === 5) { break; }
       let ins = "<b>" + urls['labels'].join(',') + "<b>";
-      ins += '<div class="column"><img src="' + urls['url'] + '"></div>'
+      ins += '<div class="column"><img src="' + urls['url'] + '" width="600" height="400"></div>'
       album.insertAdjacentHTML("beforeend", ins);
       i++;
     }
